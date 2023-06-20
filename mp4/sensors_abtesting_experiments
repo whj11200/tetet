@@ -1,0 +1,1 @@
+{"results":[{"abtest_experiment_group_id":"1","abtest_experiment_id":"121","experiment_type":"CODE","is_control_group":false,"is_white_list":false,"variables":[{"name":"LEVCWinbuypagetest","type":"INTEGER","value":"2"}]}],"status":"SUCCESS","user_id":"e1f51cb0-e4c9-4580-b11e-838e01a6038c"}

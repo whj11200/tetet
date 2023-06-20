@@ -1,0 +1,1258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    overflow-x: hidden;
+}
+
+.circles-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1844px;
+    z-index: 10; /* 새로운 값 */
+    margin-top: 450px;
+}
+
+.circle {
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 5px 0;
+    z-index: 10; /* 새로운 값 */
+  }
+#main2 {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    background-image: url("../img/MainBackground.png");
+    overflow: hidden;
+    
+}
+#button20{
+    border: solid 3px black;
+    width: 10px;
+    height: 10px;
+    background-color: #222;
+    margin-left: 500px;
+}
+#rigt{
+    z-index: 1;
+    position: fixed;
+    top: 545px;
+    left: 1827px;
+    height: 2000px;
+    background-color: transparent;
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transform: translateY(-50%);
+}
+#button3{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 100px;
+    border-radius: 70%;
+    border: solid 3px rgb(143, 143, 143);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(143, 143, 143);
+}
+
+#button4{
+    position: absolute;
+    margin-top: 450px;
+    border-radius: 70%;
+    
+    border: solid 3px rgb(143, 143, 143);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(143, 143, 143);
+    margin-left: 150px;
+}
+#button5{
+    position: absolute;
+    margin-top: 450px;
+    border-radius: 70%;
+    
+    border: solid 3px rgb(143, 143, 143);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(143, 143, 143);
+    margin-left: 200px;
+}
+#submain {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+#submain2 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+#submain3 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+#submain4{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+.navBar {
+    width: 1000px;
+    height: 1080px;
+    position: absolute;
+    top: 0;
+    left: 300px; /* 초기에는 왼쪽으로 숨김 */
+    background-color: #222;
+}
+#scroll-to-top-button 
+{
+    position: fixed; 
+    bottom: 10px; 
+    right: 5px;
+    background: none;
+    border: none;
+    padding: 40px;
+    z-index: 2;
+}
+
+#image1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transition: left 0.5s ease;
+}
+#main{
+    position: absolute;
+    margin-left: 361px;
+    margin-top: 405px;
+}
+#index{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 405px;
+}
+#indexvideo{
+    position: absolute;
+    margin-left: 820px;
+    margin-top: 405px;
+}
+#Playvideo{
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 405px;
+}
+#pos{
+    position: absolute;
+    margin-left: 1280px;
+    margin-top: 405px;
+}
+#wow{
+    position: absolute;
+    margin-left: 1509.9px;
+    margin-top: 405px;
+}
+#image2 {
+    position: absolute;
+    top: 100px;
+    left: 1080px;
+}
+
+#texter 
+{
+    color: aliceblue;
+    top: 500px;
+}
+
+#move {
+    width: 900px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 540px;
+    transition: border-radius 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+
+#move.fullscreen {
+    border-radius: 0;
+}
+#move2{
+    width: 900px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 540px;
+    transition: border-radius 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+#move2.fullscreen {
+    border-radius: 0;
+}
+#logo
+{
+    position: absolute;
+    margin-left: 700px;
+    top: 200px;
+    
+    
+}
+#ddd{
+    top: 800px;
+    position: absolute;
+    margin-left: 790px;
+    font-size: 30px;
+    color: white;
+    font-family: "PretendardVariable"
+}
+#aaa{
+    top: 750px;
+    position: absolute;
+    margin-left: 835px;
+
+}
+#dddd{
+    width: 1920px;
+    height: 1080px;
+    background-image: url("../img/2background.png");
+    position: relative;
+    overflow: hidden;
+
+}
+.motion-blur {
+    filter: blur(8px); /* 초기에는 모션 블러 효과를 적용하여 숨김 */
+    opacity: 0; /* 초기에는 투명도를 0으로 설정하여 숨김 */
+    transition: filter 0.5s ease, opacity 0.5s ease; /* 모션 블러와 투명도에 트랜지션 효과 적용 */
+}
+.show {
+    filter: blur(0); /* 모션 블러 효과 제거하여 보이게 함 */
+    opacity: 1; /* 투명도를 1로 설정하여 보이게 함 */
+}
+#project {
+    margin-top: 50px;
+    position: absolute;
+    color: #5F6C37;
+    font-size: 21px;
+    left: 390px;
+    margin-top: 210px;
+    font-family:  "Pretendard";
+    font-weight: bold;
+}
+
+
+#videoElement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    
+    
+}
+#prom {
+    position: relative;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    margin-left: 390px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+#line{
+    position: absolute;
+    top: 200px;
+    left: 960px;
+}
+
+#prom2 {
+    position: absolute;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: 450px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+#prom3 {
+    position: absolute;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: 510px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+
+
+#icon76{
+    position: absolute;
+    top: 250px;
+    margin-left: 1250px;
+}
+#texter4{
+    font-size: 40px;
+    color: #70573B;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+#line2{
+    margin-top: 30px;
+}
+#ptag{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 40px;
+}
+#ptag2{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#ptag3{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#ptag4{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#button {
+    position: fixed;
+    z-index: 2; /* 네비게이션 바 위에 위치하도록 설정 */
+    top: 10%;
+    left: 5%;
+    background-color: transparent;
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transform: translateY(-50%);
+}
+#line3{
+    z-index: 1;
+    position: fixed;
+    top: 545px;
+    left: 96.5%;
+    height: 1080px;
+    background-color: transparent;
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transform: translateY(-50%);
+}
+
+
+
+
+#playtext1{
+    margin-top: 120px;
+    left: 920px;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "Pretendard";
+    font-weight: bold;
+    
+}
+#playtext3{
+    margin-top: 120px;
+    left: 915px;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "PretendardVariable";
+    font-weight: bold;
+    
+}
+#playtext2{
+    margin-top: 180px;
+    left: 200px;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "PretendardVariable";
+    font-size: 21px;
+}
+#texteses{
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 450px;
+}
+#botton2{
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 700px;
+    font-family: "Pretendard";
+    font-weight: normal;
+    color: #70573B;
+}
+#munhak{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 200px;
+}
+#munhak2{
+    position: absolute;
+    margin-top: 280px;
+    margin-left : 270px;
+}
+#munhak3{
+    position: absolute;
+    margin-top: 280px;
+    margin-left : 340px;
+}
+#lord{
+    position: absolute;
+    left: 700px;
+    margin-top: 180px;
+}
+
+#star{
+    position: absolute;
+    left: 1150px;
+    margin-top: 180px;
+}
+#love{
+    position: absolute;
+    left: 1600px;
+    margin-top: 180px;
+}
+#flower{
+    position: absolute;
+    left: 2050px;
+    margin-top: 180px;
+}
+#flowertext{
+    position: absolute;
+    left: 2050px;
+    margin-top: 720px;
+}
+#startext{
+    position: absolute;
+    left: 1150px;
+    margin-top: 720px;
+}
+#lovetext{
+    position: absolute;
+    left: 1600px;
+    margin-top: 720px;
+}
+#lordsinguo{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 720px;
+    color: #70573B;
+}
+#button2{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 500px;
+    width: 100px;
+}
+
+#font{
+    position: absolute;
+    margin-top: 980px;
+    margin-left: 750px;
+    font-family: "Pretendard";
+    color: #70573B;
+    font-size: 20px;
+    font-weight: normal
+}
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+#team{
+    font-family: "PretendardVariable";
+    font-weight: bold;
+    color: #5F6C37;
+    font-size: 28px;
+    position: absolute;
+    margin-left: 968px;
+    margin-top: -300px;
+}
+
+#border{
+    position: absolute;
+    margin-left: 845px;
+    margin-top: 300px;
+}
+#bak{
+    position: absolute;
+    font-family: "PretendardVariable";
+    color: #70573B;
+    margin-left: 453px;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: normal;
+}
+#line4{
+    position: absolute;
+    font-family: "PretendardVariable";
+    color: #70573B;
+    margin-left: 435.5px;
+    margin-top: 100px;
+    font-size: 28px;
+    width: 100px;
+}
+#line5{
+    position: absolute;
+    font-family: "PretendardVariable";
+    color: #70573B;
+    margin-left: 955px;
+    margin-top: 100px;
+    font-size: 28px;
+    width: 100px;
+}
+#line6{
+    position: absolute;
+    font-family: "PretendardVariable";
+    color: #70573B;
+    margin-left: 1442px;
+    margin-top: 100px;
+    font-size: 28px;
+    width: 100px;
+}
+#cherther{
+    margin-left: 410px;
+    margin-top: 140px;
+}
+#cherther2{
+    position: absolute;
+    margin-left: 515px;
+    margin-top: 10px;
+}
+#cherther3{
+    margin-left: 300px;
+    margin-top: 140px;
+}
+#bak2{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 440px;
+    margin-top: 35px;
+    font-size: 24px;
+}
+#bak3{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 455px;
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#bak4{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 955px;
+    margin-top: 35px;
+    font-size: 24px;
+}
+#bak5{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 960px;
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#bak6{
+    position: absolute;
+    font-family: "Pretendard";;
+    color: #70573B;
+    margin-left: 1447px;
+    margin-top: 35px;
+    font-size: 24px;
+}
+#bak7{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 1442px;
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#no{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 968px;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: normal;
+}
+#woo{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 1455px;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: normal;
+    
+}
+footer{
+    margin-top: 500px;
+    background-image: url('../img/footer.png');
+    width: 1920px;
+    height: 1063px;
+}
+#logo2{
+    width: 151px;
+    height: 141px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 400px;
+}
+#lastline{
+    margin-top: 400px;
+    margin-left: 600px;
+}
+
+#footertext2{
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 360px;
+    color: white;
+    font-family: "마루 부리OTF";
+}
+#footertext3{
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 850px;
+    color: white;
+    font-family: "마루 부리OTF";
+}
+#footertext4{
+    position: absolute;
+    margin-top: 540px;
+    margin-left: 850px;
+    color: white;
+    font-family: "마루 부리OTF";
+}
+#footertext5{
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 1000px;
+    color: white;
+    font-family: "마루 부리OTF";
+}
+#footertext6{
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 1000px;
+    color: white;
+    font-family: "마루 부리OTF";
+}
+#footertext7{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 1400px;
+    color: #D9663A;
+    font-family: "PretendardVariable";
+}
+#footertext8{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 1290px;
+    color: #D9663A;
+    font-family: "PretendardVariable";
+}
+#footertext9{
+    position: absolute;
+    margin-top: 590px;
+    margin-left: 1130px;
+    color: #D9663A;
+    font-family: "PretendardVariable";
+}
+
+#texter5{
+    position: absolute;
+    margin-left: 150px;
+}
+#texter6{
+    position: absolute;
+    margin-left: 150px;
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 100%;
+    background-color: #f2f2f2;
+    transform: translateX(-100%); /* 네비게이션을 왼쪽으로 이동시킴 */
+    transition: transform 0.5s ease; /* 자연스러운 이동을 위한 트랜지션 설정 */
+    z-index: 20;
+    background-image: url("../img/nav.png");
+}
+.show-navigation {
+    transform: translateX(0); /* 네비게이션을 보이도록 왼쪽으로 이동시킴 */
+}
+.hide-navigation {
+    transform: translateX(-100%);
+  }
+#exit {
+    position: absolute;
+    top: 9.3%;
+    right: 93.6%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+}   
+
+    #slideWrap {
+        width: 900px;
+        height: 410px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #slider {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+    }
+    #slider ul {
+        display: inline;
+        
+    }
+    #slider li {
+        float: left;
+        width: 300px;
+        height: 100%;
+        margin-top: 10px;}
+    .hideme {
+    opacity: 0;
+}
+
+.showme {
+    -webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    &.top {
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    &.right {
+        -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    &.bottom {
+        -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    &.bottom2 {
+        -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    &.bottom3 {
+        -webkit-animation: fade-in-bottom 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bottom 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    &.left {
+        -webkit-animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+}
+
+
+@keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@media (max-width: 1920px){
+    .circles-wrapper{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1827px;
+        z-index: 10; /* 새로운 값 */
+        margin-top: 450px;
+    }
+}
+@media (max-width: 1440px)
+{       
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #main2 {
+        width: 100%;
+        position: relative;
+        background-image: url("../img/MainBackground.png");
+        overflow: hidden;
+        
+    }
+    
+    #videoElement {
+        vertical-align: middle;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+    #logo
+    {
+        position: absolute;
+        margin-left: 30%;
+        top: 20%;
+        
+    }
+    #button{
+        position: fixed;
+        top: 10%;
+    left: 5%;
+    background-color: transparent;
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transform: translateY(-50%);
+    }
+    #line3{
+        z-index: 1;
+        position: fixed;
+        top: 30%;
+        left: 96.3%;
+        height: 1080px;
+        background-color: transparent;
+        cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+        transform: translateY(-50%);
+    }
+    .circles-wrapper{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 93.6%;;
+        z-index: 10; /* 새로운 값 */
+        margin-top: 30%;
+    }
+    #line3{
+        z-index: 1;
+        position: fixed;
+        margin: 0;
+        margin-left: -2%;
+        margin-top: -50%;
+        height: 50%;
+    }
+    #footer{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    margin-top: 290%;
+    
+}
+#aaa{
+    position: absolute;
+    top: 68%;
+    margin-left: 40%;
+
+}
+#ddd{
+    
+    position: absolute;
+    top: 73%;
+    margin-left: 37%;
+    font-size: 30px;
+    color: white;
+    font-family: "PretendardVariable"
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    transform: translateX(-100%); /* 네비게이션을 왼쪽으로 이동시킴 */
+    transition: transform 0.5s ease; /* 자연스러운 이동을 위한 트랜지션 설정 */
+    z-index: 20;
+    background-image: url("../img/nav.png");
+}
+.show-navigation {
+    transform: translateX(0); /* 네비게이션을 보이도록 왼쪽으로 이동시킴 */
+}
+.hide-navigation {
+    transform: translateX(-100%);
+}
+
+#main{
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 28%;
+}
+#index{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 28%;
+}
+#indexvideo{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 28%;
+}
+#Playvideo{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 28%;
+}
+#pos{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 28%;
+}
+#wow{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 28%;
+}
+#scroll-to-top-button{
+    position: fixed; 
+    margin-top: 10%;
+    bottom: 10px; 
+    left: 90%;
+    background: none;
+    border: none;
+    margin-right: 21.7%;
+    padding: 40px;
+    z-index: 2;
+}
+#dddd{
+    width: 100%;
+    
+    background-image: url("../img/2background.png");
+    position: relative;
+    overflow: hidden;
+}
+#project{
+    margin-top: 50px;
+    position: absolute;
+    color: #5F6C37;
+    font-size: 22px;
+    left: 17%;
+    margin-top: 210px   ;
+    font-family:  "Pretendard";
+    font-weight: bold;
+}
+#prom {
+    position: relative;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    left: -10.5%;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+#line{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+#icon76{
+    position: absolute;
+    top: 25%;
+    margin-left: 60%;
+}
+#submain {
+    width: 100%;
+    background-image: url(../img/Rectangle\ 154.png);
+    position: relative;
+    overflow: hidden;
+}
+#playtext1{
+    margin-top: 10%;
+    left: 47%;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "Pretendard";
+    font-weight: bold;
+    
+}
+#move{
+    width: 900px;
+    height: 500px;
+    margin-top: 15%;
+    margin-left: 20%;
+    transition: border-radius 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+#texteses{
+    position: absolute;
+    margin-top: 52%;
+    margin-left: 15%;
+}
+#submain2{
+    width: 100%;
+}
+#playtext3{
+    margin-top: 10%;
+    left: 47%;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "Pretendard";
+    font-weight: bold;
+}
+#move2{
+    width: 900px;
+    height: 500px;
+    margin-top: 15%;
+    margin-left: 20%;
+    transition: border-radius 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+#botton2{
+    position: absolute;
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 31%;
+    font-family: "Pretendard";
+    font-weight: normal;
+    color: #70573B;
+}
+#submain3{
+    width: 100%;
+}
+#playtext2{
+    margin-top: 10%;
+    left: 5%;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "PretendardVariable";
+    font-size: 2em;
+}
+#munhak{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 5%;
+    width: 14%;
+}
+.gallery{
+    position: absolute;
+    width: 20%;
+    margin: 0 auto;
+    height: 50%; 
+}
+#font{
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 34%;
+    font-family: "Pretendard";
+    color: #70573B;
+    font-size: 20px;
+    font-weight: normal
+}
+#submain4{
+    width: 100%;
+   
+}
+#team{
+    font-family: "PretendardVariable";
+    font-weight: bold;
+    color: #5F6C37;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: 48%;
+    margin-top: -25%;
+}
+#border{
+    position: absolute;
+    margin-left: 39.5%;
+    margin-top: 20%;
+}
+#bak{
+    position: absolute;
+    color: #70573B;
+    margin-left: 21.5%;
+    margin-top: 32%;
+}
+#no{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 47.3%;
+    margin-top: 32%;
+}
+#woo{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 71%;
+    margin-top: 32%;
+}
+#line4{
+    position: absolute;
+    color: #70573B;
+    margin-left: 20.7%;
+    margin-top: 37%;
+    width: 90px;
+}
+#line5{
+    position: absolute;
+    color: #70573B;
+    margin-left: 46.5%;
+    margin-top: 37%;
+    width: 90px;
+}
+#line6{
+    position: absolute;
+    color: #70573B;
+    margin-left: 70.5%;
+    margin-top: 37%;
+    width: 90px;
+}
+#cherther{
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 40%;
+}
+#cherther2{
+
+    margin-left: 16.5%;
+    margin-top: 4%;
+}
+#cherther3{
+    margin-left: 66.5%;
+    margin-top: 40%;
+}
+#bak2{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 20%;
+    margin-top: 3%;
+    font-size: 1.8rem;
+}
+#bak3{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 21%;
+    margin-top: 6%;
+    font-size: 1.8rem;
+}
+#bak4{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 45.7%;
+    margin-top: 3%;
+    font-size: 1.8rem;
+}
+#bak5{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 46%;
+    margin-top: 6%;
+    font-size: 1.8rem;
+}
+#bak6{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 69.5%;
+    margin-top: 3%;
+    font-size: 1.8rem;
+}
+#bak7{
+    position: absolute;
+    font-family: "Pretendard";
+    color: #70573B;
+    margin-left: 69%;
+    margin-top: 6%;
+    font-size: 1.8rem;
+}
+footer{
+    background-image: url('../img/footer.png');
+    width: 100%;
+    height: 2315px;
+    top: -5%;
+    background-size: cover;
+    background-position: center;
+}
+
+}
